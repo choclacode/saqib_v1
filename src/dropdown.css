@@ -1,0 +1,72 @@
+* {
+    scroll-behavior: smooth;
+    transition: all ease-in-out 0.4s;
+    cursor: default;
+}
+::selection {
+    background-color: rgb(154, 207, 228);
+}
+@media screen and (min-width: 426px) {
+    .links .dropdown {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .links ul li, .links .dark {
+        display: none;
+    }
+    .links .dropdown {
+        margin-left: 10px;
+    }
+    .links .phone {
+        display: initial;
+    }
+    .links .dropdown ul {
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    .links .dropdown ul li {
+        display: block;
+        transition: all ease-in-out 0.4s;
+    }
+    #burger {
+        width: 50px;
+        float: right;
+        display: block;
+    }
+    #burger span {
+        background: wheat;
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 3px;
+        position: relative;
+        top: 0;
+        transition: all ease-in-out 0.4s;
+    }
+    .links.open .dropdown ul {
+        height: auto;
+    }
+    .links.open .dropdown li {
+        margin-top: 10px;
+        text-align: left;
+    }
+    .links.open .dropdown ~ ul .phone,
+    .links.open ~ h1 {
+        opacity: 0;
+    }
+    .open #burger span:nth-child(2),
+    .open #burger span:nth-child(3){
+        width: 0;
+        opacity: 0;
+    }
+    .open #burger span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 7.5px;
+    }
+    .open #burger span:nth-child(4){
+        transform: rotate(45deg);
+        top: -7.5px;
+    }
+}
