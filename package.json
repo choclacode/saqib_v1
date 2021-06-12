@@ -1,0 +1,40 @@
+{
+  "name": "saqib_v1",
+  "version": "1.0.0",
+  "description": "saqib.ml version 1",
+  "main": "app",
+  "scripts": {
+    "start": "node .",
+    "serve": "npx concurrently \"npm:serve:app\" \"npm:watch\"",
+    "serve:app": "npx nodemon --config config/nodemon.json",
+    "build": "npx concurrently \"npm:build:*\"",
+    "build:js": "webpack --config config/webpack.js",
+    "build:sass": "npx sass app/resources/sass/main.sass public/main.css --style=compressed --no-source-map",
+    "watch": "npx concurrently \"npm:watch:*\"",
+    "watch:js": "npm run build:js -- --watch",
+    "watch:sass": "npm run build:sass -- -w"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choclacode/saqib_v1.git"
+  },
+  "keywords": [],
+  "author": "Saqib <saqib@choclacode.eu.org> (http://choclacode.eu.org/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choclacode/saqib_v1/issues"
+  },
+  "homepage": "http://v1.saqib.ml",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

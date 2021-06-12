@@ -1,0 +1,34 @@
+extends ../layout.pug
+
+block title
+  | About
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/academic") Academic
+
+block link4
+  a(href="/books") Books
+
+mixin main(className)
+  div(class=className)
+    h2 About me
+    br
+    p
+      | It's me, the chosen one. I recently created a #{''}
+      em webpage
+      | . I didn't know how easy it is to create a #{''}
+      em webpage
+      | .
+    a(href="https://saqib.ml", target="_blank")
+      .button Click here for more information
+
+block desktop
+  h1 About
+  +main('desktop')
+
+block content
+  section.phone#about
+    +main('phone')

@@ -1,0 +1,31 @@
+extends ../../layout.pug
+
+block title
+  | #{category.name} &laquo; Docs
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/quran") Quran
+
+block link4
+  a(href="/docs") Docs
+
+mixin main(className)
+  .doc(class=className)
+    ul.docs-links
+      for link in links
+        li
+          a(href=`/docs/${category.href}/${link.slug}`)
+            .button= link.title
+      li
+        a(href=`/docs`)
+          .button Back 
+
+block desktop
+  +main('desktop')
+
+block content
+  section.phone
+    +main('phone')

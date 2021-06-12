@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap')
+
+*
+  scroll-behavior: smooth
+  transition: all ease-in-out 0.4s
+  cursor: default
+
+body
+  font-family: 'Poppins', 'Siyam Rupali', 'Janna LT', sans-serif
+  margin: 0
+  padding: 0
+
+header
+  background: url('/images/Beauty.jpg') no-repeat left top
+  background-attachment: fixed
+  background-size: cover
+  color: wheat
+  height: 100vh
+  padding: 30px
+
+  h1
+    margin-top: 5%
+
+  h3 p a
+    color: wheat
+    padding: 2px
+
+section
+  height: auto
+  margin: 20px
+  margin-bottom: 80px
+  color: black
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  div
+    width: 30%
+    margin-left: 12.5%
+
+ul
+  list-style-type: none
+
+li.phone,
+li.desktop
+  text-shadow: 0 0 5px rgb(117, 116, 27)
+  font-family: 'MyArabic', sans-serif
+
+a
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+figure
+  margin: auto
+  text-align: center
+  width: 300px
+
+  figcaption
+    color: gray
+
+img
+  border-radius: 5%
+  width: 300px
+
+  &:hover
+    width: 350px
+
+.links
+  ul
+    text-align: center
+    margin: 0
+    padding: 0
+
+  li
+    width: 200px
+    display: inline-block
+    padding: 2px
+
+  .desktop
+    display: inline-block
+    font-size: 48px
+
+  a
+    text-transform: uppercase
+    color: wheat
+    padding: 4px
+    margin-bottom: 10px
+
+    &:hover
+      color: rgb(131, 136, 65)
+      background-color: wheat
+      border-radius: 5px
+      padding: 2px
+      font-size: large
+
+.phone,
+li.phone
+  display: none
+
+.desc
+  font-size: larger
+  border: dashed #a09c9c79
+  border-radius: 5px
+  height: 350px
+
+  & .text
+    margin-top: 6vh
+    font-size: larger
+
+  & .photo-right,
+  & .photo-left
+    margin-top: 8.5vh
+
+.img
+  height: 100vh
+  width: 100%
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  margin: 0
+
+  & p
+    margin: auto
+    font-family: 'Nickainley'
+    font-size: 3vw
+    text-align: right
+    text-shadow: 0 0 0.5vw rgba(65, 255, 239, 0.5)
+    color: white
+
+  &#img-1
+    background-image: url('/images/index/Volcano.jpg')
+
+  &#img-2
+    background-image: url('/images/index/Ice\ Mountains.jpeg')
+
+.button
+  height: 20px
+  line-height: 20px
+  width: 270px
+  color: wheat
+  text-align: center
+  padding: 10px
+  margin: 0 5px 20px
+  border: 1px solid wheat
+  border-radius: 5px
+
+  &:hover
+    color: rgba(0, 0, 0, 0.5)
+    background-color: wheat
+
+section.codes
+  border: dashed #a09c9c79
+  border-radius: 5px
+
+  div
+    margin: 30px 0 30px 12.5%
+
+  h1
+    font-size: xx-large
+    margin: 20px
+
+.codes pre
+  font-family: 'JetBrains Mono'
+
+nav.books
+  ul
+    font-size: larger
+    margin: 10px
+
+  li
+    margin: 10px
+
+    &:hover
+      font-size: larger
+
+  a
+    color: wheat
+
+footer
+  background: #454545
+  font-size: 16px
+  color: wheat
+  padding: 20px
+
+.dark,
+.links .dropdown .dark
+  display: block
+  float: right
+  background: url('/images/icons/Sun.svg') no-repeat center
+  background-size: 100%
+  height: 20px
+  width: 20px
+  margin: 0
+
+.dark-mode .dark,
+.dark-mode .links .dropdown .dark
+  background-image: url('/images/icons/Moon.svg')
+
+.dark
+  opacity: 0.5
+
+  &:hover
+    opacity: 1
+
+  &-mode
+    &,
+    & section,
+    & section *,
+    & footer
+      background-color: rgb(39, 34, 34)
+      color: #d4cfcf
+
+    & .img p
+      color: rgb(39, 34, 34)
+      background-color: initial
+
+    & .img p:hover
+      color: #d4cfcf
+
+    &::-webkit-scrollbar
+      &-thumb
+        background: rgb(90, 82, 82)
+
+      &-track
+        background: #d4cfcf
+
+::selection
+  background-color: rgb(154, 207, 228)
+
+::-webkit-scrollbar
+  width: 3px
+
+  &-track
+    background: #f0f0f0
+
+  &-thumb
+    background: #bdbcbc
+
+// @media screen and...
+@media screen and (max-width: 1113px)
+  .links
+    li
+      width: 170px
+
+    .desktop
+      font-size: 36px
+
+@media screen and (max-width: 1080px)
+  header
+    background-size: 100%
+    height: 500px
+
+  li.phone
+    display: inline-block
+    font-size: 36px
+
+  .desktop,
+  .links .desktop
+    display: none
+
+  nav.books a
+    color: black
+
+  .img
+    background-size: 100%
+
+  section.phone
+    display: block
+    height: 700px
+
+    .phone
+      display: inline
+      color: black
+
+  .text.phone
+    display: block
+
+  .phone
+    .button
+      color: rgba(0, 0, 0, 0.5)
+      background-color: wheat
+
+      &:hover
+        color: wheat
+        background-color: rgba(0, 0, 0, 0.5)
+
+  section.codes
+    display: block
+
+    div
+      width: 80%
+
+  section.quran
+    font-size: medium
+
+@media screen and (max-width: 900px)
+  header
+    height: 400px
+
+  .links
+    li
+      width: 125px
+
+    .phone
+      width: 200px
+
+  .desc
+    height: auto
+    display: block
+
+    div
+      width: 80%
+
+    .photo-right
+      margin-bottom: 20px
+
+  .codes.desktop
+    display: none
+
+@media screen and (max-width: 715px)
+  header
+    height: 300px
+
+  .links li
+    width: 100px
+
+  figure
+    width: 250px
+
+    img
+      width: 250px
+
+  img:hover
+    width: 275px
+
+  section.quran
+    font-size: small
+
+@media screen and (max-width: 650px)
+  header
+    height: 250px
+
+  .links
+    li
+      width: 65px
+
+    a
+      font-size: small
+
+      &:hover
+        font-size: 15px
+
+    .phone
+      font-size: 32px
+
+  .codes pre
+    margin-left: 0
+    font-size: 10px
+
+  figure
+    width: 200px
+
+    img
+      width: 200px
+
+  img:hover
+    width: 225px
+
+@media screen and (max-width: 500px)
+  header
+    height: 200px
+
+  .links .phone
+    font-size: 28px
+
+@media screen and (max-width: 450px)
+  header
+    height: 160px
+
+@media screen and (max-width: 365px)
+  header
+    height: 130px
+
+  .links li
+    width: 60px
+
+  .codes pre
+    overflow-y: scroll
+
+// @font-face...
+@font-face
+  font-family: 'JetBrains Mono'
+  src: url('/fonts/JetBrainsMono-Regular.ttf')
+
+@font-face
+  font-family: 'Nickainley'
+  src: url('/fonts/Nickainley-Normal.ttf')
+
+@font-face
+  font-family: 'Siyam Rupali'
+  src: url('https://choclacode.herokuapp.com/public/assets/fonts/Siyamrupali.ttf')
+
+@font-face
+  font-family: 'Janna LT'
+  src: url('https://choclacode.herokuapp.com/public/assets/fonts/JannaLT.ttf')
+
+@font-face
+  font-family: 'MyArabic'
+  src: url('/fonts/MyArabicFont.ttf')
+
+@media screen and (min-width: 426px)
+  .links .dropdown
+    display: none
+
+@media screen and (max-width: 425px)
+  .links
+    ul li,
+    .dark
+      display: none
+
+    .dropdown
+      margin-left: 10px
+
+      ul
+        display: block
+        height: 0
+        overflow: hidden
+
+        li
+          display: block
+          transition: all ease-in-out 0.4s
+
+    .phone
+      display: initial
+
+    &.open .dropdown
+      ul
+        height: auto
+
+      li
+        margin-top: 10px
+        text-align: left
+
+    &.open .dropdown ~ ul .phone,
+    &.open ~ h1
+      opacity: 0
+
+  .open #burger span:nth-child(2),
+  .open #burger span:nth-child(3)
+    width: 0
+    opacity: 0
+
+  .open #burger span:nth-child(1)
+    transform: rotate(-45deg)
+    top: 7.5px
+
+  .open #burger span:nth-child(4)
+    transform: rotate(45deg)
+    top: -7.5px
+
+  #burger
+    width: 50px
+    float: right
+    display: block
+
+    span
+      background: wheat
+      display: block
+      width: 20px
+      height: 2px
+      margin-bottom: 3px
+      position: relative
+      top: 0
+      transition: all ease-in-out 0.4s
+
+section.quran
+  font-size: larger
+  font-weight: bold
+  width: 90vw
+  margin: 0 auto
+
+  .row
+    display: flex
+    flex-direction: row
+    width: 900px
+    float: right
+    margin: 50px auto
+
+    ul
+      display: flex
+      flex-direction: column
+      width: 300px
+      padding-inline-start: 5px
+
+    ul li
+      height: 60px
+      padding: 10px
+      padding-bottom: 0
+      margin-bottom: 10px
+      cursor: pointer
+
+    ul li:hover,
+    li:hover *
+      background-color: rgb(211, 211, 211)
+      border-radius: 5px
+      color: rgb(15, 15, 15)
+
+    span
+      display: inline-block
+      cursor: pointer
+
+  .dark-mode .row ul li:hover,
+  .dark-mode .row li:hover *
+    background-color: rgb(27, 27, 27)
+    color: whitesmoke
+
+  .num
+    color: #d1d0d0
+    font-size: 16px
+    width: 10px
+
+  .eng
+    margin-left: 25px
+    width: 150px
+
+  .ara
+    text-align: right
+    margin-left: 0px
+    width: 90px
+
+  .mng
+    margin-top: 5px
+    margin-left: 35px
+    margin-right: 0
+    font-size: 13px
+    text-transform: uppercase
+    width: 250px
+    overflow: hidden
+    cursor: pointer
+
+// @media screen and...
+@media screen and (max-width: 1005px)
+  section.quran
+    font-size: 16px
+
+    .row
+      width: 80vw
+      display: block
+      margin: 50px auto
+
+      ul
+        width: 80vw
+
+    .eng
+      width: 45vw
+      margin-left: 45px
+
+    .ara
+      width: 20vw
+
+    .mng
+      width: 60vw
+      margin-left: 55px
+
+@media screen and (max-width: 630px)
+  section.quran
+    .eng
+      width: 40vw
+      margin-left: 50px
+
+    .mng
+      margin-left: 60px
+
+@media screen and (max-width: 425px)
+  section.quran
+    .eng
+      margin-left: 30px
+
+    .mng
+      margin-left: 40px
+
+.doc
+  .row
+    height: 200px
+    width: 50vw
+    margin: 100px auto
+    text-align: center
+
+    a
+      display: inline-block
+      width: 100px
+      height: 100px
+      line-height: 100px
+      margin: 3.5vw
+      padding: 0
+      color: wheat
+      border: 1px solid wheat
+      border-radius: 50%
+
+      &:hover
+        background-color: wheat
+
+        span
+          color: rgb(44, 44, 44)
+
+  .phone
+    .row
+      height: max-content
+      margin-top: 200px
+
+      a
+        color: rgba(0, 0, 0, 0.5)
+        background-color: wheat
+        border: 0.5px solid rgba(0, 0, 0, 0.5)
+
+        &:hover
+          background-color: rgba(0, 0, 0, 0.5)
+          border-color: wheat
+
+          span
+            color: wheat
+
+    span
+      background-color: rgba(0, 0, 0, 0)
+      color: rgba(0, 0, 0, 0.5)
+
+  .docs-links
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin: 100px auto 0
+    padding: 20px
+
+  article
+    text-align: justify
+    padding: 20px
+
+  p *
+    height: 20px
+    padding: 20px 0
+
+  .eng
+    font-family: 'Ubuntu Light'
+
+  .ban
+    font-family: 'Siyam Rupali'
+
+  .ara
+    font-family: 'Calibri Light', sans-serif
+    font-size: 21px
+
+  .center
+    text-align: center
+    width: 80%
+    font-size: larger
+    font-weight: bold
+    margin-bottom: 50px
+
+  figure
+    margin: 0
+    padding: 0
+    width: 70vw
+
+    img
+      width: 90%
+
+      &:hover
+        width: 100%
+
+  a *
+    cursor: pointer

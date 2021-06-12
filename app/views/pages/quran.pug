@@ -1,0 +1,39 @@
+extends ../layout.pug
+
+block title
+  | Quran &laquo; القرآن الكريم
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/quran") Quran
+
+block link4
+  a(href="/docs") Docs
+
+mixin main(className)
+  div(class=className)
+    h2 The Noble Quran
+    br
+    br
+    p A revealation from the Almighty, our Lord, Allah.
+
+block desktop
+  +main('desktop')
+
+block content
+  +main('phone')
+  section.quran
+    h4.row Surahs (Chapters)
+  section.quran
+    .row
+      for list in surahs
+        ul
+          for surah in list
+            li
+              a(href=`http://choclacode.eu.org/quran/${surah.num}`, target="_blank")
+                span.num= surah.num
+                span.eng= surah.eng
+                span.ara= surah.ara
+                .mng= surah.mng 

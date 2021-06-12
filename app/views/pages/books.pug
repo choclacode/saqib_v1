@@ -1,0 +1,28 @@
+extends ../layout.pug
+
+block title
+  | Books
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/quran") Quran
+
+block link4
+  a(href="/books") Books
+
+mixin main(className)
+  div(class=className)
+    nav.books
+      ul
+        for book in books
+          li
+            a(href=book.href, target="_blank")= book.text
+
+block desktop
+  h1 Books
+  +main('desktop')
+
+block content
+  +main('phone')

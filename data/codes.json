@@ -1,0 +1,47 @@
+[
+  {
+    "title": "JavaScript",
+    "code": "  console.log('Hello, World!')",
+    "src": "javascript.svg"
+  },
+  {
+    "title": "Python",
+    "code": "\n  if __name__ == '__main__':\n    print('Hello, World!')",
+    "src": "python.png"
+  },
+  {
+    "title": "Java",
+    "code": "\n  package hello;\n\n  public class Hello {\n    public static void main(String[] args) {\n      System.out.println(\"Hello, World!\");\n    }\n  }",
+    "src": "java.png"
+  },
+  {
+    "title": "C",
+    "code": "\n  #include <stdio.h>\n\n  int main()\n  {\n      printf(\"Hello, World!\");\n\n      return 0;\n  }",
+    "src": "c.png"
+  },
+  {
+    "title": "C++",
+    "code": "\n  #include <iostream>\n\n  int main()\n  {\n      std::cout << \"Hello, World!\";\n\n      return 0;\n  }",
+    "src": "cpp.png"
+  },
+  {
+    "title": "C#",
+    "code": "\n  using System;\n\n  namespace hello {\n    class Hello {\n      static void Main(string[] args) {\n        Console.<i>WriteLine</i>(\"Hello, World!\");\n      }\n    }\n  }",
+    "src": "csharp.png"
+  },
+  {
+    "title": "php",
+    "code": "\n  <?php \n      echo \"Hello, World!\";\n  ?>",
+    "src": "php.png"
+  },
+  {
+    "title": "html",
+    "code": "\n  <!doctype html>\n  <html>\n\n  <head>\n      <title>Hello</title>\n  </head>\n\n  <body>\n      <h1>Hello, World!</h1>\n  </body>\n\n  </html>",
+    "src": "html5.png"
+  },
+  {
+    "title": "Kotlin",
+    "code": "\n  package hello\n\n  fun main(args : Array<String>) {\n      println(\"Hello, World!\")\n  }",
+    "src": "kotlin.png"
+  }
+]

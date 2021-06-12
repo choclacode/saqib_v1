@@ -1,0 +1,48 @@
+extends ../layout.pug
+
+block title
+  | Hello, World!
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/academic") Academic
+
+block link4
+  a(href="/codes") Codes
+
+mixin main(className)
+  div(class=className)
+    h1 Hello, World!
+    h3
+      p
+        | As I like programming very much, I gave the basic 'Hello, World!' programs down below.
+        br
+        | Many programmers start their learning by this simple program that prints 'Hello, World!' in the console.
+        br
+        br
+        | Start learning your basics using the following examples and compare between the languages!
+
+block desktop
+  +main('desktop')
+
+block content
+  +main('phone')
+  mixin code(title, code)
+    div
+      h1= title
+      pre= code
+  mixin img(src, title)
+    div
+      figure
+        img(src=`/images/codes/${src}`, alt=title)
+  for code, i in codes
+    if i % 2 == 0
+      section.codes
+        +code(code.title, code.code)
+        +img(code.src, code.title)
+    else
+      section.codes
+        +img(code.src, code.title)
+        +code(code.title, code.code)

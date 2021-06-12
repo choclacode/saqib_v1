@@ -1,0 +1,27 @@
+extends ../../layout.pug
+
+block title
+  | Docs
+
+block link2
+  a(href="/about") About
+
+block link3
+  a(href="/quran") Quran
+
+block link4
+  a(href="/docs") Docs
+
+mixin main(className)
+  .doc(class=className)
+    .row
+      for link in links
+        a(href=`/docs/${link.href}`)
+          span= link.name
+
+block desktop
+  +main('desktop')
+
+block content
+  section.phone
+    +main('phone')

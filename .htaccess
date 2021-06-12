@@ -1,8 +1,0 @@
-DirectoryIndex index.html index.php
-
-ErrorDocument 400 http://saqib.ml/error/400/
-ErrorDocument 401 http://saqib.ml/error/401/
-ErrorDocument 403 http://saqib.ml/error/403/
-ErrorDocument 404 http://saqib.ml/error/404/
-ErrorDocument 500 http://saqib.ml/error/500/
-ErrorDocument 503 http://saqib.ml/error/503/
