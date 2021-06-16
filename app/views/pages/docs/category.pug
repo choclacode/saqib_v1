@@ -1,16 +1,7 @@
-extends ../../layout.pug
+extends ../../layouts/default.pug
 
 block title
   | #{category.name} &laquo; Docs
-
-block link2
-  a(href="/about") About
-
-block link3
-  a(href="/quran") Quran
-
-block link4
-  a(href="/docs") Docs
 
 mixin main(className)
   .doc(class=className)

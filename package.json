@@ -1,6 +1,6 @@
 {
   "name": "saqib_v1",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "saqib.ml version 1",
   "main": "app",
   "scripts": {
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choclacode/saqib_v1.git"
+    "url": "git+https://github.com/chocosinensis/saqib_v1.git"
   },
   "keywords": [],
-  "author": "Saqib <saqib@choclacode.eu.org> (http://choclacode.eu.org/)",
+  "author": "Saqib <contact@saqib.ml> (https://saqib.ml)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/choclacode/saqib_v1/issues"
+    "url": "https://github.com/chocosinensis/saqib_v1/issues"
   },
   "homepage": "http://v1.saqib.ml",
   "dependencies": {

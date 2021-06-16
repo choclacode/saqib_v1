@@ -17,7 +17,7 @@ export const main = () => {
 }
 
 makeRoutes([
-  [/^\/about$/g, cbs(favicon('Sciecne.ico'), bgImage('Lighthouse.jpg'))],
+  [/^\/about$/g, cbs(favicon('Science.ico'), bgImage('Lighthouse.jpg'))],
   [/^\/quran$/g, cbs(favicon('Quran-Logo.png'), bgImage('Quran.jpg'))],
   [/^\/books$/g, cbs(favicon('Books.svg'), bgImage('Mountain.jpg'))],
   [/^\/academic$/g, cbs(favicon('Academic.svg'), bgImage('Night Sky.jpg'))],

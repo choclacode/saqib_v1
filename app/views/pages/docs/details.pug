@@ -1,16 +1,7 @@
-extends ../../layout.pug
+extends ../../layouts/default.pug
 
 block title
   | #{doc.title} &laquo; #{doc.author[1]}
-
-block link2
-  a(href="/about") About
-
-block link3
-  a(href="/quran") Quran
-
-block link4
-  a(href="/docs") Docs
 
 block desktop
   h2= doc.title
