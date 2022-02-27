@@ -3,8 +3,8 @@
  *
  * The Application Entrypoint
  *
- * Author: Saqib https://saqib.ml <contact@saqib.ml>
- * url: http://v1.saqib.ml
+ * Author: Saqib https://saqib.eu.org <contact@saqib.eu.org>
+ * url: http://v1.saqib.eu.org
  */
 
 const express = require('express')
